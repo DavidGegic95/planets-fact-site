@@ -303,6 +303,87 @@ p {
 }
 
 
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    .planet {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .grid {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .motion-text {
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+
+    .image-component-motion-div {
+        position: initial;
+        translate: 0 0;
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+
+
+
+    }
+
+    .motion-div-section {
+        width: 100%;
+    }
+
+    .buttons-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+
+
+    .planet-div-mercury-planet,
+    .planet-div-venus-planet,
+    .planet-div-earth-planet,
+    .planet-div-mars-planet,
+    .planet-div-jupiter-planet,
+    .planet-div-saturn-planet,
+    .planet-div-uranus-planet,
+    .planet-div-neptune-planet,
+    .planet-div-mercury-internal,
+    .planet-div-venus-internal,
+    .planet-div-earth-internal,
+    .planet-div-mars-internal,
+    .planet-div-jupiter-internal,
+    .planet-div-saturn-internal,
+    .planet-div-uranus-internal,
+    .planet-div-neptune-internal {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
 
 
 

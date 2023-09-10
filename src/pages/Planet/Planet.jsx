@@ -64,60 +64,65 @@ const Planet = ({ setPlanetState }) => {
 
 
 
-                <motion.div
+                <motion.div className='motion-div-section'
                     initial={{ opacity: 0, x: 100, transition: { duration: 2, delay: 0 } }}
                     animate={{ opacity: 1, x: 0, transition: { duration: 1, delay: 1.2 } }}
                     exit={{ opacity: 0, x: 100, transition: { duration: 1, delay: 0 } }}
                 >
                     <section className='section-planet'>
-                        <h1>{currentPlanetObject.name}</h1>
+                        <div className='h1&&text'>
+                            <h1>{currentPlanetObject.name}</h1>
 
-                        <AnimatePresence>
-
-
-                            {view === "planet" &&
-                                <>
-                                    <TextContent currentPlanetObject={currentPlanetObject} view={view} />
+                            <AnimatePresence>
 
 
-                                    <div className='wikipedia-div'>
-                                        <span>
-                                            Source:
-                                        </span>
-                                        <a className='wiki-link' target={"_blank"} rel={"noreferrer"} href={currentPlanetObject.overview.source}>Wikipedia
-                                            <YourSvg /></a>
-                                    </div>
-                                </>}
-                            {view === "internal" &&
-                                <>
-                                    <TextContent currentPlanetObject={currentPlanetObject} view={view} />
-                                    <div className='wikipedia-div'>
-                                        <span>
-                                            Source:
-                                        </span>
-                                        <a className='wiki-link' target={"_blank"} rel={"noreferrer"} href={currentPlanetObject.structure.source}>Wikipedia
-                                            <YourSvg /></a>
-                                    </div>
-                                </>}
-                            {view === "geology" &&
-                                <>
-
-                                    <TextContent currentPlanetObject={currentPlanetObject} view={view} />
-                                    <div className='wikipedia-div'>
-                                        <span>
-                                            Source:
-                                        </span>
-                                        <a className='wiki-link' target={"_blank"} rel={"noreferrer"} href={currentPlanetObject.geology.source}>Wikipedia
-                                            <YourSvg /></a>
-
-                                    </div>
-                                </>}
-                        </AnimatePresence>
+                                {view === "planet" &&
+                                    <>
+                                        <TextContent currentPlanetObject={currentPlanetObject} view={view} />
 
 
-                        <button onClick={() => setView("planet") || setIsClicked(true)} className={`button1 ${butttonFocus1()}`}>OVERVIEW</button>
-                        <button onClick={() => setView("internal") || setIsClicked(true)} className={`button2 ${butttonFocus2()}`}>INTERNAL SCTRUCTURE</button>
-                        <button onClick={() => setView("geology") || setIsClicked(true)} className={`button3 ${butttonFocus3()}`}>SURFACE GEOLOGY</button>
+                                        <div className='wikipedia-div'>
+                                            <span>
+                                                Source:
+                                            </span>
+                                            <a className='wiki-link' target={"_blank"} rel={"noreferrer"} href={currentPlanetObject.overview.source}>Wikipedia
+                                                <YourSvg /></a>
+                                        </div>
+                                    </>}
+
+                                {view === "internal" &&
+                                    <>
+                                        <TextContent currentPlanetObject={currentPlanetObject} view={view} />
+                                        <div className='wikipedia-div'>
+                                            <span>
+                                                Source:
+                                            </span>
+                                            <a className='wiki-link' target={"_blank"} rel={"noreferrer"} href={currentPlanetObject.structure.source}>Wikipedia
+                                                <YourSvg /></a>
+                                        </div>
+                                    </>}
+                                {view === "geology" &&
+                                    <>
+
+                                        <TextContent currentPlanetObject={currentPlanetObject} view={view} />
+                                        <div className='wikipedia-div'>
+                                            <span>
+                                                Source:
+                                            </span>
+                                            <a className='wiki-link' target={"_blank"} rel={"noreferrer"} href={currentPlanetObject.geology.source}>Wikipedia
+                                                <YourSvg /></a>
+
+                                        </div>
+                                    </>}
+                            </AnimatePresence>
+                        </div>
+
+                        <div className='buttons-section'>
+
+                            <button onClick={() => setView("planet") || setIsClicked(true)} className={`button1 ${butttonFocus1()}`}>OVERVIEW</button>
+                            <button onClick={() => setView("internal") || setIsClicked(true)} className={`button2 ${butttonFocus2()}`}>INTERNAL SCTRUCTURE</button>
+                            <button onClick={() => setView("geology") || setIsClicked(true)} className={`button3 ${butttonFocus3()}`}>SURFACE GEOLOGY</button>
+                        </div>
 
                     </section>
                 </motion.div>
