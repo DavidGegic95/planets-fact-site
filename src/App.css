@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('./spartan-cufonfonts/Spartan-Medium.ttf'); */
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('./spartan-cufonfonts/Spartan-Medium.ttf');
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Spartan';
+  src: url('./spartan-cufonfonts/Spartan-SemiBold.ttf');
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 
+cursor: url() 16 16, pointer; */
+/* cursor: url(); */
+
+html,
+a:hover,
+body:hover,
+p:hover,
+div:hover,
+button:hover,
+button {
+  cursor: url('../public/icons8-rocket-24.png')16 0, auto;
 }
 
-.App-header {
-  background-color: #282c34;
+html,
+body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 100%;
+  background-color: hsl(240, 67%, 8%);
+  background-image: url('./assets/background-stars.svg');
+  color: rgba(255, 255, 255, 0.75);
+  padding-bottom: 2vh;
+
+
 }
 
-.App-link {
-  color: #61dafb;
-}
+.App {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -1,0 +1,456 @@
+.grid {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+}
+
+.img-motion-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.image-component-motion-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+
+}
+
+.text-content {
+    width: 350px;
+    height: 174px;
+    position: relative;
+
+
+}
+
+.motion-text-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.motion-text {
+    width: 350px;
+
+}
+
+.planet {
+    /* min-height: 100vh; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: auto;
+    max-width: 1110px;
+    /* overflow: hidden; */
+
+}
+
+section {
+    margin-top: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+
+.geology-position {
+    width: 163px;
+    height: 200px;
+    position: absolute;
+    content: '';
+    top: 80%;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+h1 {
+    color: white;
+    font-size: 5rem;
+    margin-bottom: 34px;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 24px;
+    font-size: 0.875rem;
+    line-height: 25px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+
+.wikipedia-div {
+    color: hsl(240, 6%, 54%);
+    font-size: 0.875rem;
+    line-height: 25px;
+    display: flex;
+    column-gap: 5px;
+
+}
+
+.wikipedia-div span {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+
+.wiki-link {
+    color: hsl(240, 6%, 54%);
+    font-size: 0.875rem;
+    line-height: 25px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    margin-bottom: 39px;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    column-gap: 8px;
+}
+
+.button1,
+.button2,
+.button3 {
+    width: 350px;
+    height: 48px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 16px;
+    border: 1px solid #393950;
+}
+
+.button-focus-mercury {
+    background-color: var(--mercury);
+    border: none;
+
+}
+
+.button-focus-venus {
+    background-color: var(--venus);
+    border: none;
+
+}
+
+.button-focus-earth {
+    background-color: var(--earth);
+    border: none;
+
+}
+
+.button-focus-mars {
+    background-color: var(--mars);
+    border: none;
+
+}
+
+.button-focus-jupiter {
+    background-color: var(--jupiter);
+    border: none;
+
+}
+
+.button-focus-saturn {
+    background-color: var(--saturn);
+    border: none;
+
+}
+
+.button-focus-uranus {
+    background-color: var(--uranus);
+    border: none;
+
+}
+
+.button-focus-neptune {
+    background-color: var(--neptune);
+    border: none;
+
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+    background-color: #313148;
+}
+
+.planet-div-mercury-planet,
+.planet-div-venus-planet,
+.planet-div-earth-planet,
+.planet-div-mars-planet,
+.planet-div-jupiter-planet,
+.planet-div-saturn-planet,
+.planet-div-uranus-planet,
+.planet-div-neptune-planet,
+.planet-div-mercury-internal,
+.planet-div-venus-internal,
+.planet-div-earth-internal,
+.planet-div-mars-internal,
+.planet-div-jupiter-internal,
+.planet-div-saturn-internal,
+.planet-div-uranus-internal,
+.planet-div-neptune-internal {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.planet-div-mercury-planet {
+    background-image: url('../../assets/planet-mercury.svg');
+
+
+}
+
+
+
+
+.planet-info-blocks {
+    /* background-color: #419EBB; */
+    /* height: 100px; */
+    width: 100%;
+    margin-top: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.planet-info-block {
+    width: 255px;
+    height: 128px;
+    background-color: transparent;
+    border: 1px solid #313148;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.motion-info-blocks {
+    width: 100%;
+}
+
+
+
+.info-p {
+    font-family: 'Spartan', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 25px;
+    color: rgb(131, 131, 145);
+    margin: 0;
+
+
+}
+
+.info-data {
+    font-family: 'Antonio', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    color: white;
+    margin: 0;
+
+
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .grid {
+        grid-template-columns: 1.8fr 1fr;
+    }
+
+    .planet-div-mercury-planet,
+    .planet-div-venus-planet,
+    .planet-div-earth-planet,
+    .planet-div-mars-planet,
+    .planet-div-jupiter-planet,
+    .planet-div-saturn-planet,
+    .planet-div-uranus-planet,
+    .planet-div-neptune-planet,
+    .planet-div-mercury-internal,
+    .planet-div-venus-internal,
+    .planet-div-earth-internal,
+    .planet-div-mars-internal,
+    .planet-div-jupiter-internal,
+    .planet-div-saturn-internal,
+    .planet-div-uranus-internal,
+    .planet-div-neptune-internal {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .planet-info-blocks {
+        /* justify-content: center; */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.planet-div-venus-planet {
+    background-image: url('../../assets/planet-venus.svg');
+}
+
+.planet-div-earth-planet {
+    background-image: url('../../assets/planet-earth.svg');
+
+}
+
+.planet-div-mars-planet {
+    background-image: url('../../assets/planet-mars.svg');
+
+}
+
+.planet-div-jupiter-planet {
+    background-image: url('../../assets/planet-jupiter.svg');
+
+}
+
+.planet-div-saturn-planet {
+    background-image: url('../../assets/planet-saturn.svg');
+
+}
+
+.planet-div-uranus-planet {
+    background-image: url('../../assets/planet-uranus.svg');
+
+}
+
+.planet-div-neptune-planet {
+    background-image: url('../../assets/planet-neptune.svg');
+}
+
+
+
+
+
+
+
+
+
+.planet-div-mercury-geology {
+    background-image: url('../../assets/geology-mercury.png');
+
+
+}
+
+.planet-div-venus-geology {
+    background-image: url('../../assets/geology-venus.png');
+}
+
+.planet-div-earth-geology {
+    background-image: url('../../assets/geology-earth.png');
+
+}
+
+.planet-div-mars-geology {
+    background-image: url('../../assets/geology-mars.png');
+
+}
+
+.planet-div-jupiter-geology {
+    background-image: url('../../assets/geology-jupiter.png');
+
+}
+
+.planet-div-saturn-geology {
+    background-image: url('../../assets/geology-saturn.png');
+
+}
+
+.planet-div-uranus-geology {
+    background-image: url('../../assets/geology-uranus.png');
+
+}
+
+.planet-div-neptune-geology {
+    background-image: url('../../assets/geology-neptune.png');
+}
+
+
+
+.planet-div-mercury-internal {
+    background-image: url('../../assets/planet-mercury-internal.svg');
+
+
+}
+
+.planet-div-venus-internal {
+    background-image: url('../../assets/planet-venus-internal.svg');
+}
+
+.planet-div-earth-internal {
+    background-image: url('../../assets/planet-earth-internal.svg');
+
+}
+
+.planet-div-mars-internal {
+    background-image: url('../../assets/planet-mars-internal.svg');
+
+}
+
+.planet-div-jupiter-internal {
+    background-image: url('../../assets/planet-jupiter-internal.svg');
+
+}
+
+.planet-div-saturn-internal {
+    background-image: url('../../assets/planet-saturn-internal.svg');
+
+}
+
+.planet-div-uranus-internal {
+    background-image: url('../../assets/planet-uranus-internal.svg');
+
+}
+
+.planet-div-neptune-internal {
+    background-image: url('../../assets/planet-neptune-internal.svg');
+}

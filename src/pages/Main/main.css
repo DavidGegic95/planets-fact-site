@@ -1,0 +1,933 @@
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .mercury {
+        animation: logo-spin infinite 8s linear;
+
+
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .venus {
+        animation: logo-spin infinite 20s linear;
+
+
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .earth {
+        animation: logo-spin infinite 30s linear;
+
+
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .mars {
+        animation: logo-spin infinite 40s linear;
+
+
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .mars {
+        animation: logo-spin infinite 60s linear;
+
+
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .jupiter {
+        animation: logo-spin infinite 70s linear;
+
+
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .saturn {
+        animation: logo-spin infinite 80s linear;
+
+
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .uranus {
+        animation: logo-spin infinite 90s linear;
+
+
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .neptune {
+        animation: logo-spin infinite 100s linear;
+
+
+    }
+}
+
+
+
+
+
+
+/* @media only screen and (min-width:768px) and (max-width:991px) {}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-image: url('../../assets/background-stars.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-origin: content-box;
+        font-family: 'Antonio', sans-serif;
+        font-family: 'Big Shoulders Display', cursive;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+    .sun {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        border-radius: 1000px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../../assets/sun.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+
+
+
+
+    .mercuryImg {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 16px;
+        height: 16px;
+        background-image: url('../../assets/planet-mercury.svg');
+        background-size: cover;
+    }
+
+    .mercury {
+        width: 120px;
+        height: 120px;
+        border-radius: 1000px;
+        border: 1px solid rgba(102, 166, 229, 0.3);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background-size: cover;
+        z-index: 10;
+    }
+
+    .mercury:hover,
+    .mercury-on-hover {
+        border: 1px solid var(--mercury);
+
+
+    }
+
+    .mercury:hover .mercuryImg {
+        transform: scale(1.2);
+
+
+    }
+
+
+    .venus {
+        width: 180px;
+        height: 180px;
+        border-radius: 1000px;
+        border: 1px solid rgba(102, 166, 229, 0.3);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background-size: cover;
+        z-index: 9;
+
+    }
+
+    .venus:hover {
+        border: 1px solid var(--venus);
+
+    }
+
+    .venus-on-hover {
+        border: 1px solid var(--venus);
+    }
+
+    .venus:hover .venusImg {
+        transform: scale(1.2);
+
+
+    }
+
+    .venusImg {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        width: 20px;
+        height: 20px;
+        background-image: url('../../assets/planet-venus.svg');
+        background-size: cover;
+    }
+
+    .earth {
+        width: 260px;
+        height: 260px;
+        border-radius: 1000px;
+        border: 1px solid rgba(102, 166, 229, 0.3);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background-size: cover;
+        z-index: 8;
+
+    }
+
+    .earth:hover {
+        border: 1px solid var(--earth);
+
+
+    }
+
+    .earth-on-hover {
+        border: 1px solid var(--earth);
+    }
+
+    .earth:hover .earthImg {
+        transform: scale(1.2);
+
+
+    }
+
+    .earthImg {
+        position: absolute;
+        bottom: 28px;
+        right: 28px;
+        width: 24px;
+        height: 24px;
+        background-image: url('../../assets/planet-earth.svg');
+        background-size: cover;
+    }
+
+    .mars {
+        width: 340px;
+        height: 340px;
+        border-radius: 1000px;
+        border: 1px solid rgba(102, 166, 229, 0.3);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background-size: cover;
+        z-index: 7;
+
+    }
+
+    .mars:hover {
+        border: 1px solid var(--mars);
+
+
+    }
+
+    .mars-on-hover {
+        border: 1px solid var(--mars);
+    }
+
+    .mars:hover .marsImg {
+        transform: scale(1.2);
+
+
+    }
+
+    .marsImg {
+        position: absolute;
+        top: 38px;
+        left: 38px;
+        width: 20px;
+        height: 20px;
+        background-image: url('../../assets/planet-mars.svg');
+        background-size: cover;
+    }
+
+    .jupiter {
+        width: 420px;
+        height: 420px;
+        border-radius: 1000px;
+        border: 1px solid rgba(102, 166, 229, 0.3);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background-size: cover;
+        z-index: 6;
+
+    }
+
+    .jupiter:hover {
+        border: 1px solid var(--jupiter);
+
+
+    }
+
+    .jupiter-on-hover {
+        border: 1px solid var(--jupiter);
+    }
+
+    .jupiter:hover .jupiterImg {
+        transform: scale(1.2);
+
+
+    }
+
+    .jupiterImg {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background-image: url('../../assets/planet-jupiter.svg');
+        background-size: cover;
+    }
+
+
+    .saturn {
+        width: 550px;
+        height: 550px;
+        border-radius: 1000px;
+        border: 1px solid rgba(102, 166, 229, 0.3);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background-size: cover;
+        z-index: 5;
+
+    }
+
+    .saturn:hover {
+        border: 1px solid var(--saturn);
+
+
+    }
+
+    .saturn-on-hover {
+        border: 1px solid var(--saturn);
+    }
+
+    .saturn:hover .saturnImg {
+        transform: scale(1.2);
+
+
+    }
+
+    .saturnImg {
+        position: absolute;
+        bottom: 35px;
+        right: 45px;
+        width: 70px;
+        height: 70px;
+        background-image: url('../../assets/planet-saturn.svg');
+        background-size: cover;
+    }
+
+    .uranus {
+        width: 700px;
+        height: 700px;
+        border-radius: 1000px;
+        border: 1px solid rgba(102, 166, 229, 0.3);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background-size: cover;
+        z-index: 4;
+
+    }
+
+    .uranus:hover {
+        border: 1px solid var(--uranus);
+
+
+    }
+
+    .uranus-on-hover {
+        border: 1px solid var(--uranus);
+    }
+
+    .uranus:hover .uranusImg {
+        transform: scale(1.2);
+
+
+    }
+
+    .uranusImg {
+        position: absolute;
+        top: 80px;
+        left: 80px;
+        width: 40px;
+        height: 40px;
+        background-image: url('../../assets/planet-uranus.svg');
+        background-size: cover;
+    }
+
+    .neptune {
+        width: 800px;
+        height: 800px;
+        border-radius: 1000px;
+        border: 1px solid rgba(102, 166, 229, 0.3);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background-size: cover;
+        z-index: 3;
+    }
+
+
+    .neptune:hover {
+        border: 1px solid var(--neptune);
+
+
+    }
+
+    .neptune-on-hover {
+        border: 1px solid var(--neptune);
+    }
+
+    .neptune:hover .neptuneImg {
+        transform: scale(1.2);
+
+
+    }
+
+    .neptuneImg {
+        position: absolute;
+        bottom: 94px;
+        left: 94px;
+        width: 40px;
+        height: 40px;
+        background-image: url('../../assets/planet-neptune.svg');
+        background-size: cover;
+    }
+
+
+} */
+
+
+
+
+.main {
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url('../../assets/background-stars.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-origin: content-box;
+    font-family: 'Antonio', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.sun {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../../assets/sun.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+.mercuryImg {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../../assets/planet-mercury.svg');
+    background-size: cover;
+}
+
+.mercury {
+    width: 120px;
+    height: 120px;
+    border-radius: 1000px;
+    border: 1px solid rgba(102, 166, 229, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-size: cover;
+    z-index: 10;
+}
+
+.mercury:hover,
+.mercury-on-hover {
+    border: 1px solid var(--mercury);
+
+
+}
+
+.mercury:hover .mercuryImg {
+    transform: scale(1.2);
+
+
+}
+
+
+.venus {
+    width: 180px;
+    height: 180px;
+    border-radius: 1000px;
+    border: 1px solid rgba(102, 166, 229, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-size: cover;
+    z-index: 9;
+
+}
+
+.venus:hover {
+    border: 1px solid var(--venus);
+
+}
+
+.venus-on-hover {
+    border: 1px solid var(--venus);
+}
+
+.venus:hover .venusImg {
+    transform: scale(1.2);
+
+
+}
+
+.venusImg {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../assets/planet-venus.svg');
+    background-size: cover;
+}
+
+.earth {
+    width: 260px;
+    height: 260px;
+    border-radius: 1000px;
+    border: 1px solid rgba(102, 166, 229, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-size: cover;
+    z-index: 8;
+
+}
+
+.earth:hover {
+    border: 1px solid var(--earth);
+
+
+}
+
+.earth-on-hover {
+    border: 1px solid var(--earth);
+}
+
+.earth:hover .earthImg {
+    transform: scale(1.2);
+
+
+}
+
+.earthImg {
+    position: absolute;
+    bottom: 28px;
+    right: 28px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../assets/planet-earth.svg');
+    background-size: cover;
+}
+
+.mars {
+    width: 340px;
+    height: 340px;
+    border-radius: 1000px;
+    border: 1px solid rgba(102, 166, 229, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-size: cover;
+    z-index: 7;
+
+}
+
+.mars:hover {
+    border: 1px solid var(--mars);
+
+
+}
+
+.mars-on-hover {
+    border: 1px solid var(--mars);
+}
+
+.mars:hover .marsImg {
+    transform: scale(1.2);
+
+
+}
+
+.marsImg {
+    position: absolute;
+    top: 38px;
+    left: 38px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../assets/planet-mars.svg');
+    background-size: cover;
+}
+
+.jupiter {
+    width: 420px;
+    height: 420px;
+    border-radius: 1000px;
+    border: 1px solid rgba(102, 166, 229, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-size: cover;
+    z-index: 6;
+
+}
+
+.jupiter:hover {
+    border: 1px solid var(--jupiter);
+
+
+}
+
+.jupiter-on-hover {
+    border: 1px solid var(--jupiter);
+}
+
+.jupiter:hover .jupiterImg {
+    transform: scale(1.2);
+
+
+}
+
+.jupiterImg {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url('../../assets/planet-jupiter.svg');
+    background-size: cover;
+}
+
+
+.saturn {
+    width: 550px;
+    height: 550px;
+    border-radius: 1000px;
+    border: 1px solid rgba(102, 166, 229, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-size: cover;
+    z-index: 5;
+
+}
+
+.saturn:hover {
+    border: 1px solid var(--saturn);
+
+
+}
+
+.saturn-on-hover {
+    border: 1px solid var(--saturn);
+}
+
+.saturn:hover .saturnImg {
+    transform: scale(1.2);
+
+
+}
+
+.saturnImg {
+    position: absolute;
+    bottom: 35px;
+    right: 45px;
+    width: 70px;
+    height: 70px;
+    background-image: url('../../assets/planet-saturn.svg');
+    background-size: cover;
+}
+
+.uranus {
+    width: 700px;
+    height: 700px;
+    border-radius: 1000px;
+    border: 1px solid rgba(102, 166, 229, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-size: cover;
+    z-index: 4;
+
+}
+
+.uranus:hover {
+    border: 1px solid var(--uranus);
+
+
+}
+
+.uranus-on-hover {
+    border: 1px solid var(--uranus);
+}
+
+.uranus:hover .uranusImg {
+    transform: scale(1.2);
+
+
+}
+
+.uranusImg {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../assets/planet-uranus.svg');
+    background-size: cover;
+}
+
+.neptune {
+    width: 800px;
+    height: 800px;
+    border-radius: 1000px;
+    border: 1px solid rgba(102, 166, 229, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-size: cover;
+    z-index: 3;
+}
+
+
+.neptune:hover {
+    border: 1px solid var(--neptune);
+
+
+}
+
+.neptune-on-hover {
+    border: 1px solid var(--neptune);
+}
+
+.neptune:hover .neptuneImg {
+    transform: scale(1.2);
+
+
+}
+
+.neptuneImg {
+    position: absolute;
+    bottom: 94px;
+    left: 94px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../assets/planet-neptune.svg');
+    background-size: cover;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    html,
+    body {
+        overflow: hidden;
+    }
+
+
+    .sun {
+        width: 90px;
+        height: 90px;
+
+    }
+
+    .mercury {
+        width: 120px;
+        height: 120px;
+    }
+
+    .venus {
+        width: 180px;
+        height: 180px;
+    }
+
+    .earth {
+        width: 240px;
+        height: 240px;
+    }
+
+    .mars {
+        width: 320px;
+        height: 320px;
+    }
+
+    .jupiter {
+        width: 400px;
+        height: 400px;
+    }
+
+    .saturn {
+        width: 500px;
+        height: 500px;
+    }
+
+    .uranus {
+        width: 600px;
+        height: 600px;
+    }
+
+    .neptune {
+        width: 700px;
+        height: 700px;
+    }
+
+    .neptuneImg {
+        bottom: 82px;
+        left: 82px;
+
+
+    }
+
+    .uranusImg {
+        top: 70px;
+        left: 70px;
+    }
+
+    .earthImg {
+        bottom: 22px;
+        right: 22px;
+
+    }
+}
+
+@media only screen and(max-width:767px) {
+
+    html,
+    body {
+        overflow: hidden;
+    }
+
+
+
+    .sun {
+        width: 80px;
+        height: 80px;
+
+    }
+
+    .mercury {
+        width: 120px;
+        height: 120px;
+    }
+
+    .venus {
+        width: 180px;
+        height: 180px;
+    }
+
+    .earth {
+        width: 240px;
+        height: 240px;
+    }
+
+    .mars {
+        width: 320px;
+        height: 320px;
+    }
+
+    .jupiter {
+        width: 400px;
+        height: 400px;
+    }
+
+    .saturn {
+        width: 500px;
+        height: 500px;
+    }
+
+    .uranus {
+        width: 600px;
+        height: 600px;
+    }
+
+    .neptune {
+        width: 700px;
+        height: 700px;
+    }
+
+    .neptuneImg {
+        bottom: 82px;
+        left: 82px;
+
+    }
+}

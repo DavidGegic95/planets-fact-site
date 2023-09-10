@@ -1,23 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
+// import Main from './pages/Main/Main';
+// import Planet from './pages/Planet/Planet';
+// import { Routes, Route, useLocation } from 'react-router';
+import Header from './components/Header/Header';
+import { useRef, useState } from 'react';
+import AnimatedRoutes from './AnimatedRoutes';
+// import { AnimatePresence } from 'framer-motion';
+
+
 
 function App() {
+  const mercuryRef = useRef(null)
+  const venusRef = useRef(null)
+  const earthRef = useRef(null)
+  const marsRef = useRef(null)
+  const jupiterRef = useRef(null)
+  const saturnRef = useRef(null)
+  const uranusRef = useRef(null)
+  const neptuneRef = useRef(null)
+  const [planetState, setPlanetState] = useState('')
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header
+        planetState={planetState}
+        mercuryRef1={mercuryRef}
+        venusRef1={venusRef}
+        marsRef1={marsRef}
+        earthRef1={earthRef}
+        jupiterRef1={jupiterRef}
+        saturnRef1={saturnRef}
+        uranusRef1={uranusRef}
+        neptuneRef1={neptuneRef}
+      />
+
+      <AnimatedRoutes
+        setPlanetState={setPlanetState}
+        mercuryRef={mercuryRef}
+        venusRef={venusRef}
+        earthRef={earthRef}
+        marsRef={marsRef}
+        jupiterRef={jupiterRef}
+        saturnRef={saturnRef}
+        uranusRef={uranusRef}
+        neptuneRef={neptuneRef} />
+
     </div>
   );
 }
