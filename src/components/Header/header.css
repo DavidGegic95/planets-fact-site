@@ -62,6 +62,7 @@
     ul {
         display: initial;
         background-color: hsl(240, 67%, 8%);
+        height: 100%;
 
     }
 

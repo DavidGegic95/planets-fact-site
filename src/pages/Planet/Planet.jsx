@@ -126,6 +126,12 @@ const Planet = ({ setPlanetState }) => {
 
                     </section>
                 </motion.div>
+                <div className='buttons-section-mobile'>
+
+                    <button onClick={() => setView("planet") || setIsClicked(true)} className={`button1 ${butttonFocus1()}`}>OVERVIEW</button>
+                    <button onClick={() => setView("internal") || setIsClicked(true)} className={`button2 ${butttonFocus2()}`}><span className='mobile-hidden-span' >INTERNAL</span> SCTRUCTURE</button>
+                    <button onClick={() => setView("geology") || setIsClicked(true)} className={`button3 ${butttonFocus3()}`}><span className='mobile-hidden-span'>SURFACE</span> GEOLOGY</button>
+                </div>
             </div>
 
             <motion.div className='motion-info-blocks'
@@ -152,8 +158,6 @@ const Planet = ({ setPlanetState }) => {
                     <div className='planet-info-block'>
                         <p className='info-p'>AVERAGE TEMP.</p>
                         <p className='info-data'>{currentPlanetObject.temperature}</p>
-
-
                     </div>
 
 

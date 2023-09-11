@@ -1,3 +1,7 @@
+.buttons-section-mobile {
+    display: none;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 2.2fr 1fr;
@@ -296,6 +300,12 @@ p {
     .planet-info-blocks {
         /* justify-content: center; */
     }
+
+    .button1:hover,
+    .button2:hover,
+    .button3:hover {
+        background-color: transparent;
+    }
 }
 
 
@@ -469,6 +479,10 @@ p {
     }
 
     .buttons-section {
+        display: none;
+    }
+
+    .buttons-section-mobile {
         width: 100%;
         display: flex;
         align-items: center;
