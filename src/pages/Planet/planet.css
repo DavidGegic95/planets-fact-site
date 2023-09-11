@@ -1,3 +1,12 @@
+@media only screen and(min-width:1200px) {
+
+    .button1:hover,
+    .button2:hover,
+    .button3:hover {
+        background-color: #313148;
+    }
+}
+
 .buttons-section-mobile {
     display: none;
 }
@@ -183,11 +192,7 @@ p {
 
 }
 
-.button1:hover,
-.button2:hover,
-.button3:hover {
-    background-color: #313148;
-}
+
 
 .planet-div-mercury-planet,
 .planet-div-venus-planet,
@@ -301,11 +306,7 @@ p {
         /* justify-content: center; */
     }
 
-    .button1:hover,
-    .button2:hover,
-    .button3:hover {
-        background-color: transparent;
-    }
+
 }
 
 
