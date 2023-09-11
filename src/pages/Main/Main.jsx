@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
 import './main.css'
 import RotatingPlanet from '../../components/RotatingPlanet/RotatingPlanet'
-// import Header from '../../components/Header/Header'
-import { AnimatePresence, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 
 const Main = ({ mercuryRef, venusRef, earthRef, marsRef, jupiterRef, saturnRef, uranusRef, neptuneRef, setPlanetState }) => {
@@ -11,7 +10,7 @@ const Main = ({ mercuryRef, venusRef, earthRef, marsRef, jupiterRef, saturnRef, 
 
     useEffect(() => {
         setPlanetState("")
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
 

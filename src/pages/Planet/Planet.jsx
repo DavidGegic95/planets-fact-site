@@ -13,11 +13,13 @@ const Planet = ({ setPlanetState }) => {
     const [isClicked, setIsClicked] = useState(false)
     let currentPlanetObject;
     let { planet } = useParams()
+
     const [view, setView] = useState("planet")
     useEffect(() => {
         setPlanetState(planet)
         console.log(planet);
-    }, [planet])
+    }, [planet, setPlanetState])
+
 
 
 
