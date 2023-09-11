@@ -277,6 +277,11 @@ p {
 @media only screen and (min-width:992px) and (max-width:1199px) {
     .grid {
         grid-template-columns: 1.8fr 1fr;
+        width: 100%;
+    }
+
+    .planet {
+        max-width: 100%;
     }
 
     .planet-div-mercury-planet,
@@ -303,10 +308,24 @@ p {
     }
 
     .planet-info-blocks {
-        /* justify-content: center; */
+        padding: 0 2rem;
+
     }
 
+    .planet-info-block {
+        width: 230px;
+    }
 
+    section {
+        align-items: flex-end;
+        padding-right: 2rem;
+    }
+
+    .buttons-section {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
 }
 
 
@@ -350,7 +369,7 @@ p {
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
-        padding: 0 1rem;
+        padding: 0 3rem;
 
 
 
@@ -398,7 +417,7 @@ p {
         justify-content: space-between;
         align-items: center;
         margin: 0;
-        padding: 0 1rem;
+        padding: 0 3rem;
 
 
     }
@@ -414,7 +433,6 @@ p {
 
     .info-p {
         font-size: 0.5rem;
-        line-height: 30px;
     }
 
     .info-data {

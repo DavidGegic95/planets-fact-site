@@ -15,16 +15,19 @@
   font-weight: 600;
 }
 
-/* 
-cursor: url() 16 16, pointer; */
-/* cursor: url(); */
+
+:focus {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 html,
-a:hover,
-body:hover,
-p:hover,
-div:hover,
-button:hover,
+:hover,
 button {
   cursor: url('../public/icons8-rocket-24.png')16 0, auto;
 }
