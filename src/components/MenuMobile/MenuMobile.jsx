@@ -9,6 +9,7 @@ import './style.css'
 const sidebar = {
     open: (height = 1000) => ({
         clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+        zIndex: 100,
         transition: {
             type: "spring",
             stiffness: 20,
@@ -17,6 +18,7 @@ const sidebar = {
     }),
     closed: {
         clipPath: "circle(30px at 40px 40px)",
+        zIndex: -100,
         transition: {
             delay: 0.5,
             type: "spring",
@@ -38,8 +40,8 @@ export const MenuMobile = () => {
             custom={height}
             ref={containerRef}
         >
-            <motion.div className="background" variants={sidebar} />
-            <Navigation toggle={() => toggleOpen()} />
+            {/* <motion.div className="background" variants={sidebar} /> */}
+            <Navigation isOpen={isOpen} toggle={() => toggleOpen()} />
             <MenuToggle toggle={() => toggleOpen()} />
         </motion.nav>
     );

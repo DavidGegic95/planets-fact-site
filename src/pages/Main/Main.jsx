@@ -19,7 +19,7 @@ const Main = ({ mercuryRef, venusRef, earthRef, marsRef, jupiterRef, saturnRef, 
 
     return (
         // <AnimatePresence>
-        <motion.div initial={{ opacity: 0, scale: 0.00001, transition: { duration: 2 } }}
+        <motion.div className='main-motion-div' initial={{ opacity: 0, scale: 0.00001, transition: { duration: 2 } }}
             animate={{ opacity: 1, scale: 1, transition: { duration: 2 } }}
             exit={{ opacity: 0, transition: { duration: 0.5 } }}
         >

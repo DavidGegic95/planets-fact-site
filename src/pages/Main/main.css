@@ -798,10 +798,13 @@
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
+    .main {
+        pointer-events: none;
+    }
 
     html,
     body {
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
 
@@ -870,64 +873,173 @@
     }
 }
 
-@media only screen and(max-width:767px) {
+@media only screen and (max-width:767px) {
 
-    html,
-    body {
-        overflow: hidden;
+    /* .mercury,
+    .venus,
+    .earth,
+    .mars,
+    .jupiter,
+    .saturn,
+    .uranus,
+    .neptune {
+
+        z-index: -1;
+    } */
+
+
+    .main-motion-div {
+        display: flex;
     }
 
-
+    .main {
+        pointer-events: none;
+        overflow: hidden;
+        min-height: 90vh;
+        height: 90vh;
+        align-items: center;
+        justify-content: flex-start;
+    }
 
     .sun {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
 
     }
 
     .mercury {
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
     }
 
     .venus {
-        width: 180px;
-        height: 180px;
+        width: 110px;
+        height: 110px;
     }
 
     .earth {
-        width: 240px;
-        height: 240px;
+        width: 140px;
+        height: 140px;
     }
 
     .mars {
+        width: 170px;
+        height: 170px;
+    }
+
+    .jupiter {
+        width: 220px;
+        height: 220px;
+    }
+
+    .saturn {
+        width: 270px;
+        height: 270px;
+    }
+
+    .uranus {
         width: 320px;
         height: 320px;
     }
 
-    .jupiter {
-        width: 400px;
-        height: 400px;
-    }
-
-    .saturn {
-        width: 500px;
-        height: 500px;
-    }
-
-    .uranus {
-        width: 600px;
-        height: 600px;
-    }
-
     .neptune {
-        width: 700px;
-        height: 700px;
+        width: 360px;
+        height: 360px;
     }
 
-    .neptuneImg {
+    /* .neptuneImg {
         bottom: 82px;
         left: 82px;
 
+    } */
+
+
+    .mercuryImg {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        width: 8px;
+        height: 8px;
+        background-image: url('../../assets/planet-mercury.svg');
+        background-size: cover;
     }
+
+    .venusImg {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 10px;
+        height: 10px;
+        background-image: url('../../assets/planet-venus.svg');
+        background-size: cover;
+    }
+
+    .earthImg {
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        width: 14px;
+        height: 14px;
+        background-image: url('../../assets/planet-earth.svg');
+        background-size: cover;
+        /* display: none; */
+    }
+
+    .marsImg {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        width: 12px;
+        height: 12px;
+        background-image: url('../../assets/planet-mars.svg');
+        background-size: cover;
+    }
+
+    .saturnImg {
+        position: absolute;
+        bottom: 22px;
+        right: 22px;
+        width: 30px;
+        height: 30px;
+        background-image: url('../../assets/planet-saturn.svg');
+        background-size: cover;
+        /* display: none; */
+    }
+
+
+    .jupiterImg {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 28px;
+        height: 28px;
+        background-image: url('../../assets/planet-jupiter.svg');
+        background-size: cover;
+        /* display: none; */
+
+    }
+
+    .uranusImg {
+        position: absolute;
+        top: 38px;
+        left: 38px;
+        width: 16px;
+        height: 16px;
+        background-image: url('../../assets/planet-uranus.svg');
+        background-size: cover;
+        /* display: none; */
+    }
+
+    .neptuneImg {
+        position: absolute;
+        bottom: 44px;
+        left: 44px;
+        width: 16px;
+        height: 16px;
+        background-image: url('../../assets/planet-neptune.svg');
+        background-size: cover;
+        position: absolute;
+        /* display: none; */
+    }
+
 }

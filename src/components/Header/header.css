@@ -3,6 +3,41 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+
+    @keyframes hidding {
+        from {
+            z-index: 100;
+        }
+
+        to {
+            z-index: -100;
+        }
+    }
+
+
+    @media (prefers-reduced-motion: no-preference) {
+        .hideUl {
+            animation-name: hidding;
+            animation-duration: 0.5s;
+            animation-delay: 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+
+
+        }
+    }
+
+    .hideUl {
+        z-index: 100;
+    }
+
+
+
+    .main {
+        /* z-index: 1000; */
+    }
+
     header {
         display: flex;
         align-items: center;
@@ -24,12 +59,32 @@
         display: initial;
     }
 
+    ul {
+        display: initial;
+        background-color: hsl(240, 67%, 8%);
+
+    }
+
+    .showUl {
+        z-index: 100;
+    }
+
+
+
+    li {
+        background-color: hsl(240, 67%, 8%);
+
+
+
+    }
+
     .header-home-button {
         font-family: 'Antonio', sans-serif;
         font-size: 28px;
         font-weight: 400;
         line-height: normal;
         color: rgb(255, 255, 255);
+        z-index: 101;
 
 
     }
@@ -55,10 +110,19 @@
         border: none;
     }
 
+    /* .planet {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+    } */
+
 
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+
 
     header {
         flex-flow: column;

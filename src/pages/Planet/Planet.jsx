@@ -120,8 +120,8 @@ const Planet = ({ setPlanetState }) => {
                         <div className='buttons-section'>
 
                             <button onClick={() => setView("planet") || setIsClicked(true)} className={`button1 ${butttonFocus1()}`}>OVERVIEW</button>
-                            <button onClick={() => setView("internal") || setIsClicked(true)} className={`button2 ${butttonFocus2()}`}>INTERNAL SCTRUCTURE</button>
-                            <button onClick={() => setView("geology") || setIsClicked(true)} className={`button3 ${butttonFocus3()}`}>SURFACE GEOLOGY</button>
+                            <button onClick={() => setView("internal") || setIsClicked(true)} className={`button2 ${butttonFocus2()}`}><span className='mobile-hidden-span' >INTERNAL</span> SCTRUCTURE</button>
+                            <button onClick={() => setView("geology") || setIsClicked(true)} className={`button3 ${butttonFocus3()}`}><span className='mobile-hidden-span'>SURFACE</span> GEOLOGY</button>
                         </div>
 
                     </section>
