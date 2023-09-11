@@ -1,7 +1,7 @@
 import React from 'react'
 import { AnimatePresence, motion } from "framer-motion"
 
-const Image = ({ isClicked, view, planet }) => {
+const Image = ({ view, planet }) => {
     return (
         <AnimatePresence >
             <motion.div className='image-component-motion-div' key={view} initial={{ opacity: 0, scale: 0, transition: { duration: 2, to: 0, delay: 0 }, rotate: 360 }}

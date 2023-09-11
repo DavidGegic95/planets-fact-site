@@ -3,8 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import Main from "./pages/Main/Main";
 import Planet from "./pages/Planet/Planet";
 
-// import Home from "./Home";
-// import About from "./About";
+
 
 const AnimatedRoutes = ({ mercuryRef, venusRef, earthRef, marsRef, jupiterRef, saturnRef, uranusRef, neptuneRef, setPlanetState }) => {
     const location = useLocation();

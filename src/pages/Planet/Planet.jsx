@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import './planet.css'
-// import img from '../../assets/path'
 import { ReactComponent as YourSvg } from '../../assets/path.svg';
 import { AnimatePresence, motion } from "framer-motion"
 import Image from '../../components/Image/Image';

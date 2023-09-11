@@ -1,11 +1,7 @@
 import './App.css';
-// import Main from './pages/Main/Main';
-// import Planet from './pages/Planet/Planet';
-// import { Routes, Route, useLocation } from 'react-router';
 import Header from './components/Header/Header';
 import { useRef, useState } from 'react';
 import AnimatedRoutes from './AnimatedRoutes';
-// import { AnimatePresence } from 'framer-motion';
 
 
 
