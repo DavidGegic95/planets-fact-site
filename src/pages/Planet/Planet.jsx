@@ -120,8 +120,8 @@ const Planet = ({ setPlanetState }) => {
                         <div className='buttons-section'>
 
                             <button onClick={() => setView("planet") || setIsClicked(true)} className={`button1 ${butttonFocus1()}`}><span className='button-numbers'>01</span> OVERVIEW</button>
-                            <button onClick={() => setView("internal") || setIsClicked(true)} className={`button2 ${butttonFocus2()}`}><span className='button-numbers'>02</span>  <span className='mobile-hidden-span' >INTERNAL</span> SCTRUCTURE</button>
-                            <button onClick={() => setView("geology") || setIsClicked(true)} className={`button3 ${butttonFocus3()}`}><span className='button-numbers'>03</span>  <span className='mobile-hidden-span'>SURFACE</span> GEOLOGY</button>
+                            <button onClick={() => setView("internal") || setIsClicked(true)} className={`button2 ${butttonFocus2()}`}><span className='button-numbers'>02</span>  <span className='mobile-hidden-span' >INTERNAL</span> STRUCTURE</button>
+                            <button onClick={() => setView("geology") || setIsClicked(true)} className={`button3 ${butttonFocus3()}`}><span className='button-numbers'>03</span>  <span className='mobile-hidden-span'>SURFACE</span>GEOLOGY</button>
                         </div>
 
                     </section>
@@ -129,8 +129,8 @@ const Planet = ({ setPlanetState }) => {
                 <div className='buttons-section-mobile'>
 
                     <button onClick={() => setView("planet") || setIsClicked(true)} className={`button1 ${butttonFocus1()}`}>OVERVIEW</button>
-                    <button onClick={() => setView("internal") || setIsClicked(true)} className={`button2 ${butttonFocus2()}`}><span className='mobile-hidden-span' >INTERNAL</span> SCTRUCTURE</button>
-                    <button onClick={() => setView("geology") || setIsClicked(true)} className={`button3 ${butttonFocus3()}`}><span className='mobile-hidden-span'>SURFACE</span> GEOLOGY</button>
+                    <button onClick={() => setView("internal") || setIsClicked(true)} className={`button2 ${butttonFocus2()}`}><span className='mobile-hidden-span' >INTERNAL</span> STRUCTURE</button>
+                    <button onClick={() => setView("geology") || setIsClicked(true)} className={`button3 ${butttonFocus3()}`}>SURFACE GEOLOGY</button>
                 </div>
             </div>
 

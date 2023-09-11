@@ -27,7 +27,11 @@
 }
 
 html,
-:hover,
+a:hover,
+body:hover,
+p:hover,
+div:hover,
+button:hover,
 button {
   cursor: url('../public/icons8-rocket-24.png')16 0, auto;
 }
