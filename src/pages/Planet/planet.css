@@ -333,6 +333,7 @@ p {
     flex-wrap: wrap;
     padding-top: 6vh;
     row-gap: 2vh;
+    position: relative;
   }
 
   h1 {
@@ -343,11 +344,27 @@ p {
   .motion-text {
     font-size: 11px;
     line-height: 22px;
+    width: 340px;
+    text-align: left;
+  }
+  .text-content {
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .img-motion-div {
+    position: relative;
+    width: 300px;
+    height: 300px;
   }
 
   .image-component-motion-div {
-    position: initial;
-    translate: 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
   }
 
   section {
@@ -415,6 +432,11 @@ p {
   .info-data {
     font-size: 24px;
     line-height: 30px;
+  }
+  .geology-position {
+    width: 120px;
+    height: 160px;
+    top: 70%;
   }
 }
 
@@ -602,6 +624,18 @@ p {
     background-color: transparent;
 
     border-bottom: 3px solid var(--neptune);
+  }
+  .motion-text {
+    font-size: 11px;
+    line-height: 22px;
+    width: 320px;
+    text-align: left;
+  }
+  .text-content {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 

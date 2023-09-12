@@ -33,8 +33,7 @@ const Image = ({ view, planet }) => {
               view === "internal"
                 ? `planet-div-${planet}-internal`
                 : `planet-div-${planet}-planet`
-            }
-          ></div>
+            }></div>
         )}
 
         {view === "internal" && (
