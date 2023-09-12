@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { MenuMobile } from "../MenuMobile/MenuMobile";
 import "./header.css";
-import { useCycle } from "framer-motion";
+import { useState } from "react";
 
 const Header = ({
   mercuryRef1,
@@ -15,7 +15,7 @@ const Header = ({
   neptuneRef1,
   planetState,
 }) => {
-  const [isOpen, toggleOpen] = useCycle(false, true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const changeNeptune = () => {
     neptuneRef1?.current?.classList?.add("neptune-on-hover");
@@ -69,10 +69,14 @@ const Header = ({
   return (
     <div className="header-wrapper">
       <header>
-        <Link onClick={toggleOpen} className="header-home-button" to="/">
+        <Link
+          onClick={() => setIsOpen(false)}
+          className="header-home-button"
+          to="/"
+        >
           THE PLANETS
         </Link>
-        <MenuMobile isOpen={isOpen} toggleOpen={toggleOpen} />
+        <MenuMobile isOpen={isOpen} setIsOpen={setIsOpen} />
         <nav className="none-mobile-nav">
           <div
             onMouseOver={changeMercury}

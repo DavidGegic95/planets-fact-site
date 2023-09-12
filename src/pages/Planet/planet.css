@@ -3,10 +3,6 @@
 }
 
 @media only screen and(min-width:1200px) {
-  button:hover {
-    cursor: pointer;
-  }
-
   .button1:hover,
   .button2:hover,
   .button3:hover {
@@ -145,6 +141,7 @@ p {
   text-align: left;
   padding-left: 1rem;
   letter-spacing: 2.57px;
+  cursor: pointer;
 }
 
 .button-numbers {
@@ -636,6 +633,18 @@ p {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+  }
+
+  .img-motion-div {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  .image-component-motion-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
   }
 }
 
