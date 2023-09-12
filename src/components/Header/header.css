@@ -1,1122 +1,974 @@
 .nav-mobile {
-    display: none;
+  display: none;
 }
 
-@media only screen and (max-width: 767px)  {
-
-    @keyframes hidding {
-        from {
-            z-index: 100;
-        }
-
-        to {
-            z-index: -100;
-        }
+@media only screen and (max-width: 767px) {
+  @keyframes hidding {
+    from {
+      z-index: 100;
     }
 
-
-    @media (prefers-reduced-motion: no-preference) {
-        .hideUl {
-            animation-name: hidding;
-            animation-duration: 0.5s;
-            animation-delay: 1s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-            animation-timing-function: ease;
-
-
-        }
+    to {
+      z-index: -100;
     }
+  }
 
+  @media (prefers-reduced-motion: no-preference) {
     .hideUl {
-        z-index: 100;
+      animation-name: hidding;
+      animation-duration: 0.5s;
+      animation-delay: 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
     }
+  }
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2vh;
-        width: 100%;
-        height: 10vh;
-        /* padding-top: 2vh; */
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  .hideUl {
+    z-index: 100;
+  }
 
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
 
-    }
+  .none-mobile-nav {
+    display: none;
+  }
 
-    .none-mobile-nav {
-        display: none;
-    }
+  .nav-mobile {
+    display: initial;
+  }
 
-    .nav-mobile {
-        display: initial;
-    }
+  ul {
+    display: initial;
+    background-color: hsl(240, 67%, 8%);
+    height: 100%;
+  }
 
-    ul {
-        display: initial;
-        background-color: hsl(240, 67%, 8%);
-        height: 100%;
+  .showUl {
+    z-index: 100;
+  }
 
-    }
+  li {
+    background-color: hsl(240, 67%, 8%);
+  }
 
-    .showUl {
-        z-index: 100;
-    }
+  .header-home-button {
+    font-family: "Antonio", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgb(255, 255, 255);
+    z-index: 101;
+  }
 
+  a {
+    text-decoration: none;
 
+  }
 
-    li {
-        background-color: hsl(240, 67%, 8%);
+  .menu {
+    display: initial;
+  }
 
-
-
-    }
-
-    .header-home-button {
-        font-family: 'Antonio', sans-serif;
-        font-size: 28px;
-        font-weight: 400;
-        line-height: normal;
-        color: rgb(255, 255, 255);
-        z-index: 101;
-
-
-    }
-
-    a {
-        text-decoration: none;
-        /* font-family: 'Spartan', sans-serif;
-        font-size: 0.6875rem;
-        font-weight: 600;
-        line-height: 25px;
-        letter-spacing: 1px;
-        line-height: 25px;
-        color: hsla(0, 0%, 100%, 0.75);
-        width: 100%; */
-    }
-
-
-    .menu {
-        display: initial;
-    }
-
-    .header-wrapper {
-        border: none;
-    }
-
-    /* .planet {
-        position: absolute;
-        top: 10vh;
-        left: 0;
-    } */
-
-
+  .header-wrapper {
+    border: none;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
-
-
-
-    header {
-        flex-flow: column;
-        height: 100%;
-        margin: 0 auto;
-        padding: 0 10%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 2vh;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        row-gap: 2vh;
-
-    }
-
-    .header-wrapper {
-        border: none;
-
-
-    }
-
-    .headerLeft {
-        display: block;
-    }
-
-    .header-home-button {
-        font-family: 'Antonio', sans-serif;
-        font-size: 28px;
-        font-weight: 400;
-        line-height: normal;
-        color: rgb(255, 255, 255);
-
-
-    }
-
-    a {
-        text-decoration: none;
-        font-family: 'Spartan', sans-serif;
-        font-size: 0.6875rem;
-        font-weight: 600;
-        line-height: 25px;
-        letter-spacing: 1px;
-        line-height: 25px;
-        color: hsla(0, 0%, 100%, 0.75);
-    }
-
-    a:hover {
-        color: white;
-
-    }
-
-    nav {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .mercury-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .mercury-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .mercury-header-div:hover .mercury-line {
-        background-color: var(--mercury);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-
-    .venus-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .venus-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-
-
-    .venus-header-div:hover .venus-line {
-        background-color: var(--venus);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-
-    .earth-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .earth-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .earth-header-div:hover .earth-line {
-        background-color: var(--earth);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-
-    .mars-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .mars-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .mars-header-div:hover .mars-line {
-        background-color: var(--mars);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .jupiter-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .jupiter-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .jupiter-header-div:hover .jupiter-line {
-        background-color: var(--jupiter);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .saturn-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .saturn-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .saturn-header-div:hover .saturn-line {
-        background-color: var(--saturn);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .uranus-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .uranus-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .uranus-header-div:hover .uranus-line {
-        background-color: var(--uranus);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .neptune-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .neptune-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .neptune-header-div:hover .neptune-line {
-        background-color: var(--neptune);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .neptune-header-div:hover .neptune {
-        border: 1px solid var(--neptune);
-    }
-
-
-    .mercury-line-hover {
-        background-color: var(--mercury);
-        transform: none;
-    }
-
-    .venus-line-hover {
-        background-color: var(--venus);
-        transform: none;
-
-    }
-
-    .earth-line-hover {
-        background-color: var(--earth);
-        transform: none;
-
-    }
-
-    .mars-line-hover {
-        background-color: var(--mars);
-        transform: none;
-
-    }
-
-    .saturn-line-hover {
-        background-color: var(--saturn);
-        transform: none;
-
-    }
-
-    .jupiter-line-hover {
-        background-color: var(--jupiter);
-        transform: none;
-
-    }
-
-    .uranus-line-hover {
-        background-color: var(--uranus);
-        transform: none;
-
-    }
-
-    .neptune-line-hover {
-        background-color: var(--neptune);
-        transform: none;
-
-    }
+  header {
+    flex-flow: column;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    row-gap: 2vh;
+  }
+
+  .header-wrapper {
+    border: none;
+  }
+
+  .headerLeft {
+    display: block;
+  }
+
+  .header-home-button {
+    font-family: "Antonio", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgb(255, 255, 255);
+  }
+
+  a {
+    text-decoration: none;
+    font-family: "Spartan", sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mercury-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .mercury-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .mercury-header-div:hover .mercury-line {
+    background-color: var(--mercury);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .venus-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .venus-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .venus-header-div:hover .venus-line {
+    background-color: var(--venus);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .earth-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .earth-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .earth-header-div:hover .earth-line {
+    background-color: var(--earth);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .mars-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .mars-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .mars-header-div:hover .mars-line {
+    background-color: var(--mars);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .jupiter-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .jupiter-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .jupiter-header-div:hover .jupiter-line {
+    background-color: var(--jupiter);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .saturn-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .saturn-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .saturn-header-div:hover .saturn-line {
+    background-color: var(--saturn);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .uranus-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .uranus-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .uranus-header-div:hover .uranus-line {
+    background-color: var(--uranus);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .neptune-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .neptune-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .neptune-header-div:hover .neptune-line {
+    background-color: var(--neptune);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .neptune-header-div:hover .neptune {
+    border: 1px solid var(--neptune);
+  }
+
+  .mercury-line-hover {
+    background-color: var(--mercury);
+    transform: none;
+  }
+
+  .venus-line-hover {
+    background-color: var(--venus);
+    transform: none;
+  }
+
+  .earth-line-hover {
+    background-color: var(--earth);
+    transform: none;
+  }
+
+  .mars-line-hover {
+    background-color: var(--mars);
+    transform: none;
+  }
+
+  .saturn-line-hover {
+    background-color: var(--saturn);
+    transform: none;
+  }
+
+  .jupiter-line-hover {
+    background-color: var(--jupiter);
+    transform: none;
+  }
+
+  .uranus-line-hover {
+    background-color: var(--uranus);
+    transform: none;
+  }
+
+  .neptune-line-hover {
+    background-color: var(--neptune);
+    transform: none;
+  }
 }
 
-@media(min-width:992px) and (max-width:1199px) {
-
-
-    header {
-        flex-flow: row;
-        height: 100%;
-        /* max-width: 1440px; */
-        margin: 0 auto;
-        padding: 0 10%;
-        width: 100%;
-        height: 85px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-    }
-
-    .header-wrapper {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
-
-    }
-
-    .headerLeft {
-        display: block;
-    }
-
-    .header-home-button {
-        font-family: 'Antonio', sans-serif;
-        font-size: 28px;
-        font-weight: 400;
-        line-height: normal;
-        color: rgb(255, 255, 255);
-
-
-    }
-
-    a {
-        text-decoration: none;
-        font-family: 'Spartan', sans-serif;
-        font-size: 0.6875rem;
-        font-weight: 600;
-        line-height: 25px;
-        letter-spacing: 1px;
-        line-height: 25px;
-        color: hsla(0, 0%, 100%, 0.75);
-    }
-
-    a:hover {
-        color: white;
-
-    }
-
-    nav {
-        width: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .mercury-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .mercury-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .mercury-header-div:hover .mercury-line {
-        background-color: var(--mercury);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-
-    .venus-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .venus-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-
-
-    .venus-header-div:hover .venus-line {
-        background-color: var(--venus);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-
-    .earth-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .earth-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .earth-header-div:hover .earth-line {
-        background-color: var(--earth);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-
-    .mars-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .mars-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .mars-header-div:hover .mars-line {
-        background-color: var(--mars);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .jupiter-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .jupiter-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .jupiter-header-div:hover .jupiter-line {
-        background-color: var(--jupiter);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .saturn-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .saturn-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .saturn-header-div:hover .saturn-line {
-        background-color: var(--saturn);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .uranus-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .uranus-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .uranus-header-div:hover .uranus-line {
-        background-color: var(--uranus);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .neptune-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .neptune-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .neptune-header-div:hover .neptune-line {
-        background-color: var(--neptune);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .neptune-header-div:hover .neptune {
-        border: 1px solid var(--neptune);
-    }
-
-
-    .mercury-line-hover {
-        background-color: var(--mercury);
-        transform: none;
-    }
-
-    .venus-line-hover {
-        background-color: var(--venus);
-        transform: none;
-
-    }
-
-    .earth-line-hover {
-        background-color: var(--earth);
-        transform: none;
-
-    }
-
-    .mars-line-hover {
-        background-color: var(--mars);
-        transform: none;
-
-    }
-
-    .saturn-line-hover {
-        background-color: var(--saturn);
-        transform: none;
-
-    }
-
-    .jupiter-line-hover {
-        background-color: var(--jupiter);
-        transform: none;
-
-    }
-
-    .uranus-line-hover {
-        background-color: var(--uranus);
-        transform: none;
-
-    }
-
-    .neptune-line-hover {
-        background-color: var(--neptune);
-        transform: none;
-
-    }
-
+@media (min-width: 992px) and (max-width: 1199px) {
+  header {
+    flex-flow: row;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10%;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-wrapper {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .headerLeft {
+    display: block;
+  }
+
+  .header-home-button {
+    font-family: "Antonio", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgb(255, 255, 255);
+  }
+
+  a {
+    text-decoration: none;
+    font-family: "Spartan", sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  nav {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mercury-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .mercury-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .mercury-header-div:hover .mercury-line {
+    background-color: var(--mercury);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .venus-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .venus-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .venus-header-div:hover .venus-line {
+    background-color: var(--venus);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .earth-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .earth-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .earth-header-div:hover .earth-line {
+    background-color: var(--earth);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .mars-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .mars-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .mars-header-div:hover .mars-line {
+    background-color: var(--mars);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .jupiter-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .jupiter-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .jupiter-header-div:hover .jupiter-line {
+    background-color: var(--jupiter);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .saturn-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .saturn-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .saturn-header-div:hover .saturn-line {
+    background-color: var(--saturn);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .uranus-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .uranus-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .uranus-header-div:hover .uranus-line {
+    background-color: var(--uranus);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .neptune-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .neptune-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .neptune-header-div:hover .neptune-line {
+    background-color: var(--neptune);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .neptune-header-div:hover .neptune {
+    border: 1px solid var(--neptune);
+  }
+
+  .mercury-line-hover {
+    background-color: var(--mercury);
+    transform: none;
+  }
+
+  .venus-line-hover {
+    background-color: var(--venus);
+    transform: none;
+  }
+
+  .earth-line-hover {
+    background-color: var(--earth);
+    transform: none;
+  }
+
+  .mars-line-hover {
+    background-color: var(--mars);
+    transform: none;
+  }
+
+  .saturn-line-hover {
+    background-color: var(--saturn);
+    transform: none;
+  }
+
+  .jupiter-line-hover {
+    background-color: var(--jupiter);
+    transform: none;
+  }
+
+  .uranus-line-hover {
+    background-color: var(--uranus);
+    transform: none;
+  }
+
+  .neptune-line-hover {
+    background-color: var(--neptune);
+    transform: none;
+  }
 }
 
-
-@media only screen and (min-width:1200px) {
-
-    header {
-        flex-flow: row;
-        height: 100%;
-        min-width: 1200px;
-        margin: 0 auto;
-        padding: 0 32px;
-        /* width: 100%; */
-        height: 85px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-    }
-
-    .header-wrapper {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
-
-    }
-
-    .headerLeft {
-        display: block;
-    }
-
-    .header-home-button {
-        font-family: 'Antonio', sans-serif;
-        font-size: 28px;
-        font-weight: 400;
-        line-height: normal;
-        color: rgb(255, 255, 255);
-
-
-    }
-
-    a {
-        /* color: #92929F; */
-        text-decoration: none;
-        font-family: 'Spartan', sans-serif;
-        font-size: 0.6875rem;
-        font-weight: 600;
-        line-height: 25px;
-        letter-spacing: 1px;
-        line-height: 25px;
-        color: hsla(0, 0%, 100%, 0.75);
-    }
-
-    a:hover {
-        color: white;
-
-    }
-
-    nav {
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .mercury-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .mercury-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .mercury-header-div:hover .mercury-line {
-        background-color: var(--mercury);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-
-    .venus-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .venus-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-
-
-    .venus-header-div:hover .venus-line {
-        background-color: var(--venus);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-
-    .earth-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .earth-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .earth-header-div:hover .earth-line {
-        background-color: var(--earth);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-
-    .mars-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .mars-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .mars-header-div:hover .mars-line {
-        background-color: var(--mars);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .jupiter-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .jupiter-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .jupiter-header-div:hover .jupiter-line {
-        background-color: var(--jupiter);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .saturn-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .saturn-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .saturn-header-div:hover .saturn-line {
-        background-color: var(--saturn);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .uranus-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .uranus-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .uranus-header-div:hover .uranus-line {
-        background-color: var(--uranus);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .neptune-header-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 85px;
-        position: relative;
-        cursor: pointer;
-
-    }
-
-    .neptune-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: transparent;
-        transform: scaleX(0);
-    }
-
-    .neptune-header-div:hover .neptune-line {
-        background-color: var(--neptune);
-        transform: scaleX(1);
-        transition: 350ms ease;
-
-    }
-
-    .neptune-header-div:hover .neptune {
-        border: 1px solid var(--neptune);
-    }
-
-
-    .mercury-line-hover {
-        background-color: var(--mercury);
-        transform: none;
-    }
-
-    .venus-line-hover {
-        background-color: var(--venus);
-        transform: none;
-
-    }
-
-    .earth-line-hover {
-        background-color: var(--earth);
-        transform: none;
-
-    }
-
-    .mars-line-hover {
-        background-color: var(--mars);
-        transform: none;
-
-    }
-
-    .saturn-line-hover {
-        background-color: var(--saturn);
-        transform: none;
-
-    }
-
-    .jupiter-line-hover {
-        background-color: var(--jupiter);
-        transform: none;
-
-    }
-
-    .uranus-line-hover {
-        background-color: var(--uranus);
-        transform: none;
-
-    }
-
-    .neptune-line-hover {
-        background-color: var(--neptune);
-        transform: none;
-
-    }
+@media only screen and (min-width: 1200px) {
+  header {
+    flex-flow: row;
+    height: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-wrapper {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .headerLeft {
+    display: block;
+  }
+
+  .header-home-button {
+    font-family: "Antonio", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgb(255, 255, 255);
+  }
+
+  a {
+    text-decoration: none;
+    font-family: "Spartan", sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mercury-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .mercury-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .mercury-header-div:hover .mercury-line {
+    background-color: var(--mercury);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .venus-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .venus-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .venus-header-div:hover .venus-line {
+    background-color: var(--venus);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .earth-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .earth-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .earth-header-div:hover .earth-line {
+    background-color: var(--earth);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .mars-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .mars-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .mars-header-div:hover .mars-line {
+    background-color: var(--mars);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .jupiter-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .jupiter-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .jupiter-header-div:hover .jupiter-line {
+    background-color: var(--jupiter);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .saturn-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .saturn-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .saturn-header-div:hover .saturn-line {
+    background-color: var(--saturn);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .uranus-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .uranus-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .uranus-header-div:hover .uranus-line {
+    background-color: var(--uranus);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .neptune-header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .neptune-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transform: scaleX(0);
+  }
+
+  .neptune-header-div:hover .neptune-line {
+    background-color: var(--neptune);
+    transform: scaleX(1);
+    transition: 350ms ease;
+  }
+
+  .neptune-header-div:hover .neptune {
+    border: 1px solid var(--neptune);
+  }
+
+  .mercury-line-hover {
+    background-color: var(--mercury);
+    transform: none;
+  }
+
+  .venus-line-hover {
+    background-color: var(--venus);
+    transform: none;
+  }
+
+  .earth-line-hover {
+    background-color: var(--earth);
+    transform: none;
+  }
+
+  .mars-line-hover {
+    background-color: var(--mars);
+    transform: none;
+  }
+
+  .saturn-line-hover {
+    background-color: var(--saturn);
+    transform: none;
+  }
+
+  .jupiter-line-hover {
+    background-color: var(--jupiter);
+    transform: none;
+  }
+
+  .uranus-line-hover {
+    background-color: var(--uranus);
+    transform: none;
+  }
+
+  .neptune-line-hover {
+    background-color: var(--neptune);
+    transform: none;
+  }
 }

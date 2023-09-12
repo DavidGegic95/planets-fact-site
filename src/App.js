@@ -1,20 +1,18 @@
-import './App.css';
-import Header from './components/Header/Header';
-import { useRef, useState } from 'react';
-import AnimatedRoutes from './AnimatedRoutes';
-
-
+import "./App.css";
+import Header from "./components/Header/Header";
+import { useRef, useState } from "react";
+import AnimatedRoutes from "./AnimatedRoutes";
 
 function App() {
-  const mercuryRef = useRef(null)
-  const venusRef = useRef(null)
-  const earthRef = useRef(null)
-  const marsRef = useRef(null)
-  const jupiterRef = useRef(null)
-  const saturnRef = useRef(null)
-  const uranusRef = useRef(null)
-  const neptuneRef = useRef(null)
-  const [planetState, setPlanetState] = useState('')
+  const mercuryRef = useRef(null);
+  const venusRef = useRef(null);
+  const earthRef = useRef(null);
+  const marsRef = useRef(null);
+  const jupiterRef = useRef(null);
+  const saturnRef = useRef(null);
+  const uranusRef = useRef(null);
+  const neptuneRef = useRef(null);
+  const [planetState, setPlanetState] = useState("");
 
   return (
     <div className="App">
@@ -39,8 +37,8 @@ function App() {
         jupiterRef={jupiterRef}
         saturnRef={saturnRef}
         uranusRef={uranusRef}
-        neptuneRef={neptuneRef} />
-
+        neptuneRef={neptuneRef}
+      />
     </div>
   );
 }
